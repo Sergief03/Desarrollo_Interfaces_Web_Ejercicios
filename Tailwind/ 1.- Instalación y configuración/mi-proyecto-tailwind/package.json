@@ -1,0 +1,7 @@
+{
+  "name": "mi-proyecto-tailwind",
+  "version": "1.0.0",
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  }
+}

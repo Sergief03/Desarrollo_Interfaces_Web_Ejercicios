@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografía Tailwind</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6 font-sans">
+
+    <!-- Fuente Predeterminada -->
+    <section class="mb-8">
+        <h1 class="text-3xl font-bold mb-2">Fuente Predeterminada (Sans-Serif)</h1>
+        <p class="text-base">
+            Este texto usa la fuente predeterminada de Tailwind: <code>ui-sans-serif</code>.
+        </p>
+    </section>
+
+    <!-- Fuente Personalizada -->
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-2">Fuente Personalizada (Google Fonts)</h2>
+        <p class="font-[Plus_Jakarta_Sans] text-lg mb-2">
+            Este texto usa la fuente "Plus Jakarta Sans" importada desde Google Fonts.
+        </p>
+        <p class="font-serif text-lg">
+            Este texto usa la fuente serif genérica: <code>font-serif</code>.
+        </p>
+        <p class="font-mono text-lg">
+            Este texto usa la fuente monoespaciada: <code>font-mono</code>.
+        </p>
+    </section>
+
+    <!-- Tamaños de Fuente -->
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-2">Tamaños de Fuente</h2>
+        <p class="text-xs">Texto extra pequeño (text-xs)</p>
+        <p class="text-sm">Texto pequeño (text-sm)</p>
+        <p class="text-base">Texto base (text-base, ~16px)</p>
+        <p class="text-lg">Texto grande (text-lg)</p>
+        <p class="text-2xl">Texto más grande (text-2xl)</p>
+        <p class="text-5xl">Texto gigante (text-5xl)</p>
+        <p class="text-[40px]">Texto con tamaño exacto 40px usando valor arbitrario</p>
+    </section>
+
+    <!-- Peso de Fuente -->
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-2">Peso de Fuente</h2>
+        <p class="font-thin">Peso 100 (font-thin)</p>
+        <p class="font-light">Peso 300 (font-light)</p>
+        <p class="font-normal">Peso 400 (font-normal)</p>
+        <p class="font-medium">Peso 500 (font-medium)</p>
+        <p class="font-bold">Peso 700 (font-bold)</p>
+        <p class="font-black">Peso 900 (font-black)</p>
+    </section>
+
+    <!-- Estilo e Alineación -->
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-2">Estilo y Alineación</h2>
+        <p class="text-5xl font-medium italic text-start mb-2">Texto grande, medio y cursiva, alineado a la izquierda</p>
+        <p class="text-3xl font-bold text-center mb-2">Texto centrado</p>
+        <p class="text-2xl font-light text-right mb-2">Texto alineado a la derecha</p>
+        <p class="text-lg font-normal text-justify">
+            Texto justificado: Tailwind permite justificar párrafos con <code>text-justify</code>.
+        </p>
+    </section>
+
+</body>
+</html>

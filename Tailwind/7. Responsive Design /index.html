@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Plus_Jakarta_Sans] bg-gray-100 p-6">
+
+  <!-- Navbar Mobile-First -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">Navbar Mobile-First</h2>
+    <nav class="flex flex-col md:flex-row md:h-20 bg-slate-800 text-white items-center gap-5 py-6 px-4 md:px-10 rounded-lg">
+      <!-- Logo -->
+      <img src="https://picsum.photos/80/56" alt="Logo" class="h-14 w-auto object-contain">
+
+      <!-- Menú -->
+      <div class="flex flex-col md:flex-row md:gap-10 text-center order-1 md:order-0 w-full md:w-auto">
+        <a href="#" class="py-2 md:py-0 px-4 block md:inline-block hover:bg-slate-700 rounded">Inicio</a>
+        <a href="#" class="py-2 md:py-0 px-4 block md:inline-block hover:bg-slate-700 rounded">Acerca de</a>
+        <a href="#" class="py-2 md:py-0 px-4 block md:inline-block hover:bg-slate-700 rounded">Contacto</a>
+      </div>
+
+      <!-- Botón -->
+      <a href="#" class="bg-amber-700 text-white px-7 py-3 rounded-lg mt-2 md:mt-0">Contáctame</a>
+    </nav>
+  </section>
+
+  <!-- Ejemplo de Box Responsive -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">Caja Responsive</h2>
+    <div class="bg-blue-500 text-white p-4 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                sm:bg-green-500 md:bg-yellow-500 lg:bg-red-500 mx-auto rounded-lg text-center">
+      Caja adaptable a diferentes pantallas
+    </div>
+  </section>
+
+  <!-- Ejemplo de Flex Responsive -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">Flex Responsive</h2>
+    <div class="flex flex-col sm:flex-row flex-wrap gap-4 bg-gray-200 p-4 rounded-lg">
+      <div class="bg-red-500 text-white p-4 w-full sm:w-1/3">Item 1</div>
+      <div class="bg-green-500 text-white p-4 w-full sm:w-1/3">Item 2</div>
+      <div class="bg-blue-500 text-white p-4 w-full sm:w-1/3">Item 3</div>
+      <div class="bg-yellow-500 text-white p-4 w-full sm:w-1/3">Item 4</div>
+    </div>
+  </section>
+
+  <!-- Rangos de Breakpoints -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">Breakpoints Rangos</h2>
+    <div class="bg-gray-300 text-center p-4 w-full 
+                sm:bg-green-400 md:bg-yellow-400 lg:bg-red-400 xl:bg-purple-500">
+      Cambia de color según el ancho de pantalla
+    </div>
+  </section>
+
+  <!-- Consejos Responsive -->
+  <section>
+    <h2 class="text-2xl font-bold mb-2">Consejos para Diseño Responsive</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Empieza por móvil (Mobile-First)</li>
+      <li>Prueba en varios tamaños usando DevTools</li>
+      <li>No abuses de breakpoints, a veces flex-wrap es suficiente</li>
+      <li>Pensar en contenido crítico en móvil</li>
+    </ul>
+  </section>
+
+</body>
+</html>

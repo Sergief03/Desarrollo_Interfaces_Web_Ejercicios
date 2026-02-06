@@ -883,20 +883,6 @@ body {
       gap: 10px;
   }
 
-  /* Products Page Mobile */
-  /* Hide logo in shop page specifically or globally? 
-     Prompt says: "Apartado 2 ... B. Pantallas tipo Móvil ... Visibilidad: El logotipo de la empresa debe ocultarse"
-     This implies specifically for Products page or generally if "Apartado 1" implies header/nav structure is shared.
-     Usually "Mi Librería" header is shared. Let's assume global rule for mobile header if it applies to common header, 
-     but prompt distinction suggests maybe Shop page specific. 
-     However, standard practice is shared header. 
-     Let's check if there is a specific class for shop page body.
-     There isn't in what I saw. I will try to target it via structure or just hide text?
-     "El logotipo y el nombre de la empresa" -> "El logotipo de la empresa debe ocultarse"
-  */
-  .logo-img {
-      display: none; /* Explicit requirement for Mobile */
-  }
   
   /* Shop Grid: 1 column */
   .products-grid,

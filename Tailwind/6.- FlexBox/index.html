@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Plus_Jakarta_Sans] bg-gray-100 p-6">
+
+  <!-- Activar Flexbox -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Contenedor Flex Básico</h2>
+    <div class="flex bg-amber-300 p-4 gap-4">
+      <div class="bg-red-500 p-4 text-white">Item 1</div>
+      <div class="bg-green-500 p-4 text-white">Item 2</div>
+      <div class="bg-blue-500 p-4 text-white">Item 3</div>
+    </div>
+  </section>
+
+  <!-- Dirección flex -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Dirección Flex</h2>
+    <div class="flex flex-col gap-2 bg-gray-200 p-4">
+      <div class="bg-red-500 p-2 text-white">flex-col</div>
+      <div class="bg-green-500 p-2 text-white">flex-col</div>
+      <div class="bg-blue-500 p-2 text-white">flex-col</div>
+    </div>
+  </section>
+
+  <!-- Alineación vertical: items- -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Alineación Vertical (items-)</h2>
+    <div class="flex h-32 bg-gray-200 items-center gap-4">
+      <div class="bg-red-500 p-2 text-white">Centro</div>
+      <div class="bg-green-500 p-2 text-white">Centro</div>
+      <div class="bg-blue-500 p-2 text-white">Centro</div>
+    </div>
+  </section>
+
+  <!-- Distribución horizontal: justify- -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Distribución Horizontal (justify-)</h2>
+    <div class="flex justify-between bg-gray-200 p-4">
+      <div class="bg-red-500 p-2 text-white">Logo</div>
+      <div class="bg-green-500 p-2 text-white">Enlaces</div>
+      <div class="bg-blue-500 p-2 text-white">Botón</div>
+    </div>
+  </section>
+
+  <!-- Espaciado entre elementos: gap- -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Espaciado entre elementos (gap-)</h2>
+    <div class="flex gap-4 bg-gray-200 p-4">
+      <div class="bg-red-500 p-2 text-white">Inicio</div>
+      <div class="bg-green-500 p-2 text-white">Acerca de</div>
+      <div class="bg-blue-500 p-2 text-white">Contacto</div>
+    </div>
+  </section>
+
+  <!-- Navbar completo -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Navbar Flexbox</h2>
+    <nav class="h-20 bg-slate-800 flex items-center justify-between px-10 rounded-lg">
+      <!-- Logo -->
+      <img src="https://picsum.photos/80/56" alt="Logo" class="h-14 w-auto object-contain">
+
+      <!-- Enlaces -->
+      <div class="flex text-white gap-10">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+      </div>
+
+      <!-- Botón -->
+      <a href="#" class="bg-amber-700 text-white px-7 py-3 rounded-lg">Contáctame</a>
+    </nav>
+  </section>
+
+  <!-- Alineación individual: self- -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Alineación Individual (self-)</h2>
+    <div class="flex h-32 bg-gray-200 gap-4">
+      <div class="bg-red-500 p-2 text-white self-start">Arriba</div>
+      <div class="bg-green-500 p-2 text-white self-center">Centro</div>
+      <div class="bg-blue-500 p-2 text-white self-end">Abajo</div>
+    </div>
+  </section>
+
+  <!-- Orden de los elementos: order- -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Orden de elementos (order-)</h2>
+    <div class="flex bg-gray-200 p-4 gap-4">
+      <div class="bg-red-500 p-2 text-white order-1">Segundo</div>
+      <div class="bg-green-500 p-2 text-white order-0">Primero</div>
+      <div class="bg-blue-500 p-2 text-white order-2">Tercero</div>
+    </div>
+  </section>
+
+  <!-- Crecimiento y encogimiento: flex- -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Crecimiento y Encogimiento</h2>
+    <div class="flex bg-gray-200 p-4 gap-4 h-20">
+      <div class="bg-red-500 p-2 text-white flex-grow">Flex Grow</div>
+      <div class="bg-green-500 p-2 text-white flex-none">Flex None</div>
+      <div class="bg-blue-500 p-2 text-white flex-1">Flex 1</div>
+    </div>
+  </section>
+
+  <!-- Flex Wrap -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Flex Wrap</h2>
+    <div class="flex flex-wrap gap-4 bg-gray-200 p-4">
+      <div class="bg-red-500 p-4 text-white w-60">Item 1</div>
+      <div class="bg-green-500 p-4 text-white w-60">Item 2</div>
+      <div class="bg-blue-500 p-4 text-white w-60">Item 3</div>
+      <div class="bg-yellow-500 p-4 text-white w-60">Item 4</div>
+    </div>
+  </section>
+
+</body>
+</html>
